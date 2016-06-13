@@ -63,5 +63,5 @@ class Connection:
 
         self.conn.request("POST", url, data, headers)
         response = self.conn.getresponse()
-        print response.read()
+        print (response.read())
         return response.read()
